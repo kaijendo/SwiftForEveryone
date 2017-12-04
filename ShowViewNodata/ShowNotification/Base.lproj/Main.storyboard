@@ -38,6 +38,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="sip-Qf-ONC">
+                        <nil key="title"/>
+                        <switch key="titleView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="cRF-Wq-fce">
+                            <rect key="frame" x="162" y="6.5" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="n9W-bY-wcC">
                             <connections>
                                 <segue destination="at0-xU-iaH" kind="presentation" identifier="AddStudent" id="8VZ-fd-7Uz"/>
@@ -45,6 +50,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mySwitch" destination="cRF-Wq-fce" id="2kx-UY-XyI"/>
                         <outlet property="nodataView" destination="W0q-qU-OLa" id="Epi-cu-smz"/>
                     </connections>
                 </tableViewController>

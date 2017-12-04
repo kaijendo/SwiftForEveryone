@@ -9,15 +9,14 @@
 import UIKit
 
 class StudentTableViewController: UITableViewController {
+    @IBOutlet weak var mySwitch: UISwitch!
     @IBOutlet var nodataView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setupData()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
-      //  setupData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -120,6 +119,18 @@ class StudentTableViewController: UITableViewController {
     fileprivate func setupView() {
         print("Studnet \(DataServices.shared.students.count)")
         if DataServices.shared.students.count == 0 {
+            self.tableView.backgroundView = nodataView
+            self.tableView.isScrollEnabled = false
+        }
+        else {
+            self.tableView.isScrollEnabled = true
+            self.tableView.backgroundView = nil
+        }
+    }
+    
+    fileprivate func setupViewNumber() {
+        print("Studnet \(DataServices.shared.number.count)")
+        if DataServices.shared.number.count == 0 {
             self.tableView.backgroundView = nodataView
             self.tableView.isScrollEnabled = false
         }

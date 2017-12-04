@@ -10,7 +10,7 @@ import Foundation
 
 class DataServices {
     static let shared = DataServices()
-    
+    /// Variable for Studnent
     private var _students: [Student]!
     var students: [Student] {
         get {
@@ -23,7 +23,26 @@ class DataServices {
             _students = newValue
         }
     }
+    
+    /// Variable for Number
+    private var _number: [Int]!
+    var number: [Int] {
+        get {
+            if _number == nil {
+                updateNumber()
+            }
+            return _number ?? []
+        }
+        set {
+            _number = newValue
+        }
+    }
+    
     // MARK: - Private Function
+    fileprivate func updateNumber() {
+        _number = []
+        
+    }
     fileprivate func updateStudent() {
         _students = []
         
@@ -37,6 +56,17 @@ class DataServices {
     }
     func removeStudent(at index: Int) {
         _students.remove(at: index)
+    }
+    
+    /// Function for Number
+    func addNewNumber(newNumber: Int) {
+        _number.append(newNumber)
+    }
+    func updateNumber(newNumber: Int, at index: Int) {
+        _number[index] = newNumber
+    }
+    func removeNumber(at index: Int) {
+        _number.remove(at: index)
     }
 }
 
