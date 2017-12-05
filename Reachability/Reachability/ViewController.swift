@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       //  let reachability = Reachability(hostName: "www.apple.com")
-
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -46,6 +45,7 @@ class ViewController: UIViewController {
     func checkReachability() {
         guard let r = reachability else { return }
         if r.isReachable  {
+
             lblNotificationView.text = "Connected"
             notificationView.backgroundColor = UIColor.green
         } else {
@@ -53,7 +53,6 @@ class ViewController: UIViewController {
             notificationView.backgroundColor = UIColor.red
         }
     }
-
     deinit {
         NotificationCenter.default.removeObserver(self)
         reachability?.stopNotifier()
