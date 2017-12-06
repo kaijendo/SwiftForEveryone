@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import SystemConfiguration
 
 class ViewController: UIViewController {
     // MARK: - Properties
+<<<<<<< Updated upstream
     /// Variables
     var reachability: Reachability? = Reachability.networkReachabilityForInternetConnection()
     /// Outlets
@@ -28,13 +28,19 @@ class ViewController: UIViewController {
       //  let reachability = Reachability(hostName: "www.apple.com")
         
         // Do any additional setup after loading the view, typically from a nib.
+=======
+    @IBOutlet weak var notificationView: Reachable!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("Da vao man hinh 1")
+>>>>>>> Stashed changes
     }
     override func viewWillAppear(_ animated: Bool) {
-        checkReachability()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+<<<<<<< Updated upstream
         // Dispose of any resources that can be recreated.
     }
     
@@ -52,6 +58,9 @@ class ViewController: UIViewController {
             lblNotificationView.text = "No internet connect"
             notificationView.backgroundColor = UIColor.red
         }
+=======
+
+>>>>>>> Stashed changes
     }
     deinit {
         NotificationCenter.default.removeObserver(self)

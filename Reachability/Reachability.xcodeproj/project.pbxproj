@@ -12,7 +12,10 @@
 		BE14DA481FD5191500EDE602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE14DA461FD5191500EDE602 /* Main.storyboard */; };
 		BE14DA4A1FD5191500EDE602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE14DA491FD5191500EDE602 /* Assets.xcassets */; };
 		BE14DA4D1FD5191500EDE602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE14DA4B1FD5191500EDE602 /* LaunchScreen.storyboard */; };
+		BE371A361FD6F8B300D36604 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE371A351FD6F8B300D36604 /* ViewController2.swift */; };
 		BE80CE2F1FD5624F002620B3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80CE2E1FD5624F002620B3 /* Reachability.swift */; };
+		BEEFA68E1FD6D8CA00466B1F /* Reachable.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEFA68D1FD6D8CA00466B1F /* Reachable.xib */; };
+		BEEFA6901FD6D9E200466B1F /* Reachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFA68F1FD6D9E200466B1F /* Reachable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,10 @@
 		BE14DA491FD5191500EDE602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE14DA4C1FD5191500EDE602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE14DA4E1FD5191500EDE602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE371A351FD6F8B300D36604 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		BE80CE2E1FD5624F002620B3 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BEEFA68D1FD6D8CA00466B1F /* Reachable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Reachable.xib; sourceTree = "<group>"; };
+		BEEFA68F1FD6D9E200466B1F /* Reachable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,11 @@
 			children = (
 				BE14DA421FD5191500EDE602 /* AppDelegate.swift */,
 				BE14DA441FD5191500EDE602 /* ViewController.swift */,
+				BEEFA68D1FD6D8CA00466B1F /* Reachable.xib */,
+				BEEFA68F1FD6D9E200466B1F /* Reachable.swift */,
 				BE80CE2E1FD5624F002620B3 /* Reachability.swift */,
 				BE14DA461FD5191500EDE602 /* Main.storyboard */,
+				BE371A351FD6F8B300D36604 /* ViewController2.swift */,
 				BE14DA491FD5191500EDE602 /* Assets.xcassets */,
 				BE14DA4B1FD5191500EDE602 /* LaunchScreen.storyboard */,
 				BE14DA4E1FD5191500EDE602 /* Info.plist */,
@@ -127,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE14DA4D1FD5191500EDE602 /* LaunchScreen.storyboard in Resources */,
+				BEEFA68E1FD6D8CA00466B1F /* Reachable.xib in Resources */,
 				BE14DA4A1FD5191500EDE602 /* Assets.xcassets in Resources */,
 				BE14DA481FD5191500EDE602 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE371A361FD6F8B300D36604 /* ViewController2.swift in Sources */,
+				BEEFA6901FD6D9E200466B1F /* Reachable.swift in Sources */,
 				BE14DA451FD5191500EDE602 /* ViewController.swift in Sources */,
 				BE14DA431FD5191500EDE602 /* AppDelegate.swift in Sources */,
 				BE80CE2F1FD5624F002620B3 /* Reachability.swift in Sources */,
