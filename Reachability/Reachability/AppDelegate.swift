@@ -18,15 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var reachability: Reachability? = Reachability.networkReachabilityForInternetConnection()
     var targetView: UIViewController?
     var window: UIWindow?
-    var reachable = Reachable()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         /// Dectection Internet
         NotificationCenter.default.addObserver(self, selector: #selector(reachabilityDidChange(_:)), name: Notification.Name.ReachabilityNotifications().didChangedReachable, object: nil)
         _ = reachability?.startNotifier()
         targetView = window?.rootViewController
-        targetView?.view.addSubview(reachable)
-        setupView()
         return true
     }
     
@@ -53,11 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     @objc func reachabilityDidChange(_ notification: Notification) {
-        setupView()
-    }
-    
-    func setupView() {
-        reachable.setupView()
+        print("setup")
+        Reachable.shared.setupView()
     }
 }
 
