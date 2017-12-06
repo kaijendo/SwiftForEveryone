@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEDB7A7D1FD7DAEA00979533 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDB7A7C1FD7DAEA00979533 /* PopoverViewController.swift */; };
 		BEFF319A1FD7955300512978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF31991FD7955300512978 /* AppDelegate.swift */; };
-		BEFF319C1FD7955300512978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF319B1FD7955300512978 /* ViewController.swift */; };
 		BEFF319F1FD7955300512978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFF319D1FD7955300512978 /* Main.storyboard */; };
 		BEFF31A11FD7955300512978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFF31A01FD7955300512978 /* Assets.xcassets */; };
 		BEFF31A41FD7955300512978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFF31A21FD7955300512978 /* LaunchScreen.storyboard */; };
 		BEFF31AF1FD7955400512978 /* CasiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF31AE1FD7955400512978 /* CasiniTests.swift */; };
 		BEFF31BA1FD7955400512978 /* CasiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF31B91FD7955400512978 /* CasiniUITests.swift */; };
+		BEFF31C81FD7971B00512978 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF31C71FD7971B00512978 /* MasterTableViewController.swift */; };
+		BEFF31CA1FD7972B00512978 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF31C91FD7972B00512978 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BEDB7A7C1FD7DAEA00979533 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		BEFF31961FD7955300512978 /* Casini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Casini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFF31991FD7955300512978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BEFF319B1FD7955300512978 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BEFF319E1FD7955300512978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEFF31A01FD7955300512978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEFF31A31FD7955300512978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		BEFF31B51FD7955400512978 /* CasiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CasiniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFF31B91FD7955400512978 /* CasiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasiniUITests.swift; sourceTree = "<group>"; };
 		BEFF31BB1FD7955400512978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFF31C71FD7971B00512978 /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		BEFF31C91FD7972B00512978 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				BEFF31991FD7955300512978 /* AppDelegate.swift */,
-				BEFF319B1FD7955300512978 /* ViewController.swift */,
 				BEFF319D1FD7955300512978 /* Main.storyboard */,
+				BEFF31C71FD7971B00512978 /* MasterTableViewController.swift */,
+				BEDB7A7C1FD7DAEA00979533 /* PopoverViewController.swift */,
+				BEFF31C91FD7972B00512978 /* DetailsViewController.swift */,
 				BEFF31A01FD7955300512978 /* Assets.xcassets */,
 				BEFF31A21FD7955300512978 /* LaunchScreen.storyboard */,
 				BEFF31A51FD7955300512978 /* Info.plist */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEFF319C1FD7955300512978 /* ViewController.swift in Sources */,
+				BEDB7A7D1FD7DAEA00979533 /* PopoverViewController.swift in Sources */,
+				BEFF31C81FD7971B00512978 /* MasterTableViewController.swift in Sources */,
 				BEFF319A1FD7955300512978 /* AppDelegate.swift in Sources */,
+				BEFF31CA1FD7972B00512978 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
