@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEDB7A7D1FD7DAEA00979533 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDB7A7C1FD7DAEA00979533 /* PopoverViewController.swift */; };
+		BE3F2DE11FD844A100AD77C3 /* PopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3F2DE01FD844A100AD77C3 /* PopoverTableViewController.swift */; };
 		BEFF319A1FD7955300512978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF31991FD7955300512978 /* AppDelegate.swift */; };
 		BEFF319F1FD7955300512978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFF319D1FD7955300512978 /* Main.storyboard */; };
 		BEFF31A11FD7955300512978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFF31A01FD7955300512978 /* Assets.xcassets */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BEDB7A7C1FD7DAEA00979533 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		BE3F2DE01FD844A100AD77C3 /* PopoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverTableViewController.swift; sourceTree = "<group>"; };
 		BEFF31961FD7955300512978 /* Casini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Casini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFF31991FD7955300512978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEFF319E1FD7955300512978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,10 +101,10 @@
 		BEFF31981FD7955300512978 /* Casini */ = {
 			isa = PBXGroup;
 			children = (
+				BE3F2DE01FD844A100AD77C3 /* PopoverTableViewController.swift */,
 				BEFF31991FD7955300512978 /* AppDelegate.swift */,
 				BEFF319D1FD7955300512978 /* Main.storyboard */,
 				BEFF31C71FD7971B00512978 /* MasterTableViewController.swift */,
-				BEDB7A7C1FD7DAEA00979533 /* PopoverViewController.swift */,
 				BEFF31C91FD7972B00512978 /* DetailsViewController.swift */,
 				BEFF31A01FD7955300512978 /* Assets.xcassets */,
 				BEFF31A21FD7955300512978 /* LaunchScreen.storyboard */,
@@ -265,9 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEDB7A7D1FD7DAEA00979533 /* PopoverViewController.swift in Sources */,
 				BEFF31C81FD7971B00512978 /* MasterTableViewController.swift in Sources */,
 				BEFF319A1FD7955300512978 /* AppDelegate.swift in Sources */,
+				BE3F2DE11FD844A100AD77C3 /* PopoverTableViewController.swift in Sources */,
 				BEFF31CA1FD7972B00512978 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

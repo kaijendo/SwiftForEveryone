@@ -58,10 +58,21 @@ class MasterTableViewController: UITableViewController {
                 detailsVC.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 detailsVC.navigationItem.leftItemsSupplementBackButton = true
                 detailsVC.text = "\(dateObject[indexPath.row])"
-                
-
             }
-            
         }
+        if segue.identifier == "SortOptional" {
+            if let sortVC = segue.destination as? PopoverTableViewController {
+                sortVC.modalPresentationStyle = .popover
+                sortVC.popoverPresentationController?.delegate = self
+                sortVC.popoverPresentationController?.sourceView = self.view
+            }
+        }
+    }
+}
+
+extension MasterTableViewController: UIPopoverPresentationControllerDelegate{
+    func adaptivePresentationStyle(for controller: UIPresentationController)
+        -> UIModalPresentationStyle {
+            return UIModalPresentationStyle.none
     }
 }
