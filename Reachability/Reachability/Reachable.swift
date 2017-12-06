@@ -9,6 +9,7 @@
 import UIKit
 
 class Reachable: UIView {
+    static let shared = Reachable()
     @IBOutlet var reachableView: Reachable!
     @IBOutlet weak var lblNotification: UILabel!
     
