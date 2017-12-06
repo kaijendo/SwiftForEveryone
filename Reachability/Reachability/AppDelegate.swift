@@ -9,15 +9,24 @@
 import UIKit
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    static var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
     
+    var reachability: Reachability? = Reachability.networkReachabilityForInternetConnection()
+    var targetView: UIViewController?
     var window: UIWindow?
-    
+    var reachable = Reachable()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         /// Dectection Internet
-        _ = reachability?.startNotifier()
         NotificationCenter.default.addObserver(self, selector: #selector(reachabilityDidChange(_:)), name: Notification.Name.ReachabilityNotifications().didChangedReachable, object: nil)
+        _ = reachability?.startNotifier()
+        targetView = window?.rootViewController
+        targetView?.view.addSubview(reachable)
+        setupView()
         return true
     }
     
@@ -41,6 +50,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    @objc func reachabilityDidChange(_ notification: Notification) {
+        setupView()
+    }
+    
+    func setupView() {
+        reachable.setupView()
     }
 }
 
