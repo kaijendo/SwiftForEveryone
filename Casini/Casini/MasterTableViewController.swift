@@ -12,7 +12,7 @@ class MasterTableViewController: UITableViewController {
     // MARK: - Properties
     /// Variable
     var dateObject = [Date]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let rightNav = UIBarButtonItem(title: "Add", style: UIBarButtonItemStyle.done, target: self, action: #selector(addNew))
