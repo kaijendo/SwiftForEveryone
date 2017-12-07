@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE3F2DE11FD844A100AD77C3 /* PopoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3F2DE01FD844A100AD77C3 /* PopoverTableViewController.swift */; };
+		BE466E371FD9196400B49465 /* AlertNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE466E361FD9196400B49465 /* AlertNotificationViewController.swift */; };
 		BEFF319A1FD7955300512978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF31991FD7955300512978 /* AppDelegate.swift */; };
 		BEFF319F1FD7955300512978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFF319D1FD7955300512978 /* Main.storyboard */; };
 		BEFF31A11FD7955300512978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFF31A01FD7955300512978 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		BE3F2DE01FD844A100AD77C3 /* PopoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverTableViewController.swift; sourceTree = "<group>"; };
+		BE466E361FD9196400B49465 /* AlertNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNotificationViewController.swift; sourceTree = "<group>"; };
 		BEFF31961FD7955300512978 /* Casini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Casini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFF31991FD7955300512978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEFF319E1FD7955300512978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				BE3F2DE01FD844A100AD77C3 /* PopoverTableViewController.swift */,
 				BEFF31991FD7955300512978 /* AppDelegate.swift */,
 				BEFF319D1FD7955300512978 /* Main.storyboard */,
+				BE466E361FD9196400B49465 /* AlertNotificationViewController.swift */,
 				BEFF31C71FD7971B00512978 /* MasterTableViewController.swift */,
 				BEFF31C91FD7972B00512978 /* DetailsViewController.swift */,
 				BEFF31A01FD7955300512978 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 				BEFF31C81FD7971B00512978 /* MasterTableViewController.swift in Sources */,
 				BEFF319A1FD7955300512978 /* AppDelegate.swift in Sources */,
 				BE3F2DE11FD844A100AD77C3 /* PopoverTableViewController.swift in Sources */,
+				BE466E371FD9196400B49465 /* AlertNotificationViewController.swift in Sources */,
 				BEFF31CA1FD7972B00512978 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
