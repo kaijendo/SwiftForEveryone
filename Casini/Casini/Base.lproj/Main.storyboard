@@ -184,6 +184,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Cfs-x9-8mx" kind="unwind" identifier="toMasterView" unwindAction="unwindToMasterVCFor:" id="EFG-ff-3go"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="3T4-aN-pYK" style="IBUITableViewCellStyleDefault" id="dwX-Hh-nbO">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -253,6 +256,23 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="yJi-ee-9Rz" style="IBUITableViewCellStyleDefault" id="SHB-WF-Fcb">
+                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SHB-WF-Fcb" id="S6k-D7-Oi9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yJi-ee-9Rz">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -295,7 +315,7 @@
                     <navigationItem key="navigationItem" title="Master" id="Hgj-H7-XiF">
                         <barButtonItem key="leftBarButtonItem" title="Sort" id="iIH-Oc-bJQ">
                             <connections>
-                                <segue destination="Ey4-na-x2A" kind="popoverPresentation" identifier="SortOptional" popoverAnchorBarButtonItem="iIH-Oc-bJQ" id="Lxl-Hc-M76">
+                                <segue destination="Ey4-na-x2A" kind="popoverPresentation" identifier="toSortOptions" popoverAnchorBarButtonItem="iIH-Oc-bJQ" id="Lxl-Hc-M76">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                 </segue>
                             </connections>
@@ -304,6 +324,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmD-g0-GUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Cfs-x9-8mx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="858" y="-510"/>
         </scene>
