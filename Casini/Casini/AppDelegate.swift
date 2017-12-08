@@ -18,8 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = splitViewController.viewControllers.last as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         _ = splitViewController.viewControllers.first
-        let alertView = UIAlertController(title: "abc", message: "cde", preferredStyle: .alert)
-        let ok = 
         splitViewController.delegate = self
         return true
     }

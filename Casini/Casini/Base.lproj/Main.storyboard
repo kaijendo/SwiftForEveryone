@@ -294,6 +294,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="aDo-UL-Syx">
+                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="dMw-of-1Rn">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -322,8 +328,67 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="gdf-kV-Pgs"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nodataView" destination="8KY-ND-qG7" id="6Si-YO-kku"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmD-g0-GUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="8KY-ND-qG7">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="367"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad-face-emoji" translatesAutoresizingMaskIntoConstraints="NO" id="w3T-v8-AUL">
+                            <rect key="frame" x="111" y="53.5" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="S72-W2-0RR"/>
+                                <constraint firstAttribute="width" constant="150" id="upL-cn-8rq"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7W-2N-Wba">
+                            <rect key="frame" x="123" y="213.5" width="127" height="42"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                            <color key="textColor" red="1" green="0.06974860209" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="W6k-Pd-Qte">
+                            <rect key="frame" x="5" y="260.5" width="362" height="26.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="You have click &quot;">
+                                    <attributes>
+                                        <font key="NSFont" size="22" name=".AppleSystemUIFont"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="Add">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.2806004590268158" blue="0.8053149287564767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="22" name=".AppleSystemUIFont"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="&quot; to add your data">
+                                    <attributes>
+                                        <font key="NSFont" size="22" name=".AppleSystemUIFont"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="f7W-2N-Wba" firstAttribute="top" secondItem="w3T-v8-AUL" secondAttribute="bottom" constant="10" id="2IN-Dc-xtj"/>
+                        <constraint firstItem="FYK-Cf-0ra" firstAttribute="trailing" secondItem="W6k-Pd-Qte" secondAttribute="trailing" constant="5" id="3yk-SP-sWz"/>
+                        <constraint firstItem="W6k-Pd-Qte" firstAttribute="leading" secondItem="FYK-Cf-0ra" secondAttribute="leading" constant="5" id="4qz-RZ-wju"/>
+                        <constraint firstItem="W6k-Pd-Qte" firstAttribute="top" secondItem="f7W-2N-Wba" secondAttribute="bottom" constant="5" id="88a-cM-nTv"/>
+                        <constraint firstItem="W6k-Pd-Qte" firstAttribute="centerX" secondItem="f7W-2N-Wba" secondAttribute="centerX" id="Yej-fA-OuQ"/>
+                        <constraint firstItem="f7W-2N-Wba" firstAttribute="centerX" secondItem="w3T-v8-AUL" secondAttribute="centerX" id="ZGd-Ct-A50"/>
+                        <constraint firstItem="w3T-v8-AUL" firstAttribute="centerX" secondItem="FYK-Cf-0ra" secondAttribute="centerX" id="hPX-j3-poo"/>
+                        <constraint firstItem="w3T-v8-AUL" firstAttribute="centerY" secondItem="FYK-Cf-0ra" secondAttribute="centerY" multiplier="0.7" id="yf3-qY-XOb"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="FYK-Cf-0ra"/>
+                </view>
                 <exit id="Cfs-x9-8mx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="858" y="-510"/>
@@ -378,6 +443,7 @@
     </scenes>
     <resources>
         <image name="image" width="2000" height="1500"/>
+        <image name="sad-face-emoji" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3VD-to-C3W"/>
