@@ -13,11 +13,13 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var myScrollView: UIScrollView!
     
     var text: String?
+    let imageView = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "image")
         myScrollView.inputView?.addSubview(imageView)
+        myScrollView.maximumZoomScale = 6.0
+        myScrollView.minimumZoomScale = 1.0
         let rightItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveContext))
         navigationController?.topViewController!.navigationItem.rightBarButtonItem = rightItem
         txtName.text = text?.description
@@ -41,6 +43,12 @@ class DetailsViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+    }
+}
+
+extension DetailsViewController: UIScrollViewDelegate {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.view
     }
 }
 
