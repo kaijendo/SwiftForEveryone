@@ -8,6 +8,23 @@
 
 import UIKit
 
+enum SortType: Int {
+    case year = 0
+    case month = 1
+    case day = 2
+    case hour = 3
+    case minute = 4
+    case second = 5
+    //case total
+    //    func getTitle() -> String {
+    //        switch self {
+    //        case .year:
+    //            <#code#>
+    //        default:
+    //            <#code#>
+    //        }
+    //    }
+}
 class MasterTableViewController: UITableViewController {
     // MARK: - Properties
     /// Variable
@@ -58,52 +75,32 @@ class MasterTableViewController: UITableViewController {
             self.tableView.backgroundView = nil
         }
     }
-    fileprivate func sortOptions(option: Int) {
-        switch option {
-        case 0:
-            dateObject.sort {(first, last) -> Bool in {
-                analysisDate(date: first).0 < analysisDate(date: last).0
-                }()
-            }
+    fileprivate func sortOptions(sortType: SortType) {
+        switch sortType {
+        case .year:
+            dateObject.sort { analysisDate(date: $0).0 < analysisDate(date: $1).0 }
             return
-        case 1:
-            dateObject.sort {(first, last) -> Bool in {
-                analysisDate(date: first).1 < analysisDate(date: last).1
-                }()
-            }
+        case .month:
+            dateObject.sort { analysisDate(date: $0).1 < analysisDate(date: $1).1 }
             return
-        case 2:
-            dateObject.sort {(first, last) -> Bool in {
-                analysisDate(date: first).2 < analysisDate(date: last).2
-                }()
-            }
+        case .day:
+            dateObject.sort { analysisDate(date: $0).2 < analysisDate(date: $1).2 }
             return
-        case 3:
-            dateObject.sort {(first, last) -> Bool in {
-                analysisDate(date: first).3 < analysisDate(date: last).3
-                }()
-            }
+        case .hour:
+            dateObject.sort { analysisDate(date: $0).3 < analysisDate(date: $1).3 }
             return
-        case 4:
-            dateObject.sort {(first, last) -> Bool in {
-                analysisDate(date: first).4 < analysisDate(date: last).4
-                }()
-            }
+        case .minute:
+            dateObject.sort { analysisDate(date: $0).4 < analysisDate(date: $1).4 }
             return
-        case 5:
-            dateObject.sort {(first, last) -> Bool in {
-                analysisDate(date: first).5 < analysisDate(date: last).5
-                }()
-            }
-            return
-        default:
+        case .second:
+            dateObject.sort { analysisDate(date: $0).5 < analysisDate(date: $1).5 }
             return
         }
     }
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-       return 1
+        return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.dateObject.count > 0 {
@@ -145,7 +142,7 @@ class MasterTableViewController: UITableViewController {
     }
     @IBAction func unwindToMasterVC(for segue: UIStoryboardSegue) {
         if segue.source is PopoverTableViewController {
-            self.sortOptions(option: sortOption)
+            self.sortOptions(sortType: SortType(rawValue: sortOption)!)
             self.tableView.reloadData()
         }
     }

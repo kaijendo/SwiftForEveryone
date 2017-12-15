@@ -47,4 +47,5 @@ class AlertNotificationViewController: UIViewController {
     func didTappedOnBackgroundView() {
         self.dismiss(animated: true, completion: nil)
     }
+    
 }
