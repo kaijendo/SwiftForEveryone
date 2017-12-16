@@ -13,6 +13,6 @@ class BaseRequest {
     let HOME_URL = "http://api.apixu.com/"
     let VERSION = "v1"
     let MAIN_FORECAST = "forecast.json?"
-    let KEY_API = "fea52b02813c4e4a870232445172709"
-    var URL = "http://api.apixu.com/v1/forecast.json?&key=fea52b02813c4e4a870232445172709"
+    let KEY_API = "c84e43b1400746b28c744715171612"
+    var URL = "http://api.apixu.com/v1/forecast.json?&key=c84e43b1400746b28c744715171612"
 }
