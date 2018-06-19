@@ -1,0 +1,28 @@
+Memory Management:
+iPhone two main ways of storing data:
+    + the fist: the disk.
+    + the last: the RAM.
+When you running app, a file containing all executed on RAM. At the same time the system will claim a chunk of the RAM, which call is the heap. It's save all instances of our classes alive.
+This mean, we need managing life cycles of object on the heap memory and objects freed when they are no longer needed on memory.
+
+-------------
+Important note:
+reference type are allocated on the heap and values type are not.
+
+Reference counting:
+Memory management is handle by ARC(Automatic Reference Counting). Whenever you create new instance of class, ARC allocates a chuck memory of memory to store information about types and values of that instance. Whenever reference count reaches zero of class that object will be deallocated.
+ARC has been around since IOS5.
+
+4 conventions to good work with ARC:
+    + You own any object you create
+    + You can take ownership of an object using retain
+    + When you no longer need it you must relinquish ownership of an object you own
+    + You must not relinquish ownership of an object you do not own
+
+-------------
+Important note:
+Every instance of the class also called Reference Counting. This keep track of all properties, constants, and variables that have a strong references to itself.
+read more ARC: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html
+
+Strong Reference Cycles
+The example: We create two strong reference of a class both hold strong reference to each other. The reference count of those object will never terminate because reference counting never reaches to zero. This called to leak memory.
