@@ -13,7 +13,6 @@
 		BECB31F7217F594F004503D1 /* SCJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BECB31F5217F594F004503D1 /* SCJ.xcdatamodeld */; };
 		BECB31F9217F5952004503D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECB31F8217F5952004503D1 /* Assets.xcassets */; };
 		BECB31FC217F5952004503D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECB31FA217F5952004503D1 /* LaunchScreen.storyboard */; };
-		BECC7048218031E6003E5AB4 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC7047218031E6003E5AB4 /* DataServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		BECB31F8217F5952004503D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BECB31FB217F5952004503D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BECB31FD217F5952004503D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BECC7047218031E6003E5AB4 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 			children = (
 				BECB31EE217F594F004503D1 /* AppDelegate.swift */,
 				BECB31F0217F594F004503D1 /* ViewController.swift */,
-				BECC7047218031E6003E5AB4 /* DataServices.swift */,
 				BECB31F2217F594F004503D1 /* Main.storyboard */,
 				BECB31F8217F5952004503D1 /* Assets.xcassets */,
 				BECB31FA217F5952004503D1 /* LaunchScreen.storyboard */,
@@ -144,7 +141,6 @@
 				BECB31F1217F594F004503D1 /* ViewController.swift in Sources */,
 				BECB31F7217F594F004503D1 /* SCJ.xcdatamodeld in Sources */,
 				BECB31EF217F594F004503D1 /* AppDelegate.swift in Sources */,
-				BECC7048218031E6003E5AB4 /* DataServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
