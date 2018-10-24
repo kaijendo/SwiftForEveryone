@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseAlertViewController" customModule="CreateXibFile" customModuleProvider="target">
+            <connections>
+                <outlet property="myButton" destination="Rq1-W5-8gQ" id="XTx-cF-gNk"/>
+                <outlet property="textField" destination="4VX-Wh-0dk" id="vgD-ST-9KP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4VX-Wh-0dk">
+                    <rect key="frame" x="10" y="328.5" width="355" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq1-W5-8gQ">
+                    <rect key="frame" x="164.5" y="368.5" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="myButtonTapped:" destination="-1" eventType="touchUpInside" id="nER-Lh-N9S"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4VX-Wh-0dk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="CBh-Gv-B6a"/>
+                <constraint firstItem="4VX-Wh-0dk" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Grn-ej-xyD"/>
+                <constraint firstItem="Rq1-W5-8gQ" firstAttribute="top" secondItem="4VX-Wh-0dk" secondAttribute="bottom" constant="10" id="LQ5-j2-YWt"/>
+                <constraint firstItem="Rq1-W5-8gQ" firstAttribute="centerX" secondItem="4VX-Wh-0dk" secondAttribute="centerX" id="Zlm-sU-pzL"/>
+                <constraint firstItem="4VX-Wh-0dk" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xd5-DW-IgM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
